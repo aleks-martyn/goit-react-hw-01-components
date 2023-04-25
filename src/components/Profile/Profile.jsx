@@ -14,7 +14,7 @@ export const Profile = ({
     <div className={css.profile}>
           <div className={css.description}>
         <img
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+          src={avatar}
           alt={username}
           className={css.avatar}
         />
