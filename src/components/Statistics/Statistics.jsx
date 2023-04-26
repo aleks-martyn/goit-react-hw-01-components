@@ -6,17 +6,23 @@ export const Statistics = ({ title, stats }) => {
     <section className={css.statistics}>
       <h2 className={css.title}>{title}</h2>
 
-      <ul className={css.stat - list}>
-        <li className={css.item}>
-          <span className={css.label}>.docx</span>
-          <span className={css.percentage}>4%</span>
-        </li>
+      <ul className={css.stat_list}>
+        {stats.map(stat => {
+          const { id, label, percentage } = stat;
+
+          return (
+            <li className={css.item} key={id}>
+              <span className={css.label}>{label}</span>
+              <span className={css.percentage}>{percentage}%</span>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );
 };
 
-Statistics.PropTypes = {
+Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.exact({
