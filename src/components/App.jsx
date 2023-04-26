@@ -11,6 +11,7 @@ export const App = () => {
     avatar,
     stats: { followers, views, likes },
   } = user;
+
   return (
     <div>
       <Profile
