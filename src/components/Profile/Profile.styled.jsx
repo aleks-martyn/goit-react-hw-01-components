@@ -4,6 +4,7 @@ export const UserCard = styled.div`
   width: 400px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
   padding-top: 20px;
   padding-bottom: 0;
   border: 1px solid #ececec;
