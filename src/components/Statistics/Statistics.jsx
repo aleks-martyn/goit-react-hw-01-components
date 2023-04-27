@@ -7,9 +7,7 @@ export const Statistics = ({ title, stats }) => {
       {title && <h2 className={css.title}>{title}</h2>}
 
       <ul className={css.stat_list}>
-        {stats.map(stat => {
-          const { id, label, percentage } = stat;
-
+        {stats.map(({ id, label, percentage }) => {
           return (
             <li className={css.item} key={id}>
               <span className={css.label}>{label}</span>
