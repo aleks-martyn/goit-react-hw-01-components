@@ -27,15 +27,16 @@ export const StatList = styled.ul`
 
 export const StatListItem = styled.li`
   display: flex;
+  width: 80px;
   flex-direction: column;
 `;
 
 export const ItemLabel = styled.span`
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 `;
 
 export const ItemPercentage = styled.span`
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 `;
