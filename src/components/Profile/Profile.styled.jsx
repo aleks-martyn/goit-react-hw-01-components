@@ -5,7 +5,7 @@ export const UserCard = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   border: 1px solid #ececec;
   border-radius: 5px;
   background-color: #fff;
@@ -18,6 +18,7 @@ export const Description = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+  padding-bottom: 40px;
   text-align: center;
 `;
 
@@ -52,10 +53,21 @@ export const UserLocation = styled.p`
 export const Stats = styled.ul`
   display: flex;
   gap: 20px;
+  justify-content: space-evenly;
+  margin: 0;
   padding: 0;
-  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #d6dbdf;
   list-style-type: none;
   background-color: #e5e7e9;
+`;
+
+export const StatsItem = styled.li`
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const StatsLabel = styled.span`
@@ -64,7 +76,7 @@ export const StatsLabel = styled.span`
 `;
 
 export const StatsQuantity = styled.span`
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   color: #1c2833;
 `;
