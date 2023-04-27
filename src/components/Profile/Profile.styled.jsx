@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const UserCard = styled.div`
-  width: 400px;
+  width: 402px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
@@ -53,12 +53,9 @@ export const UserLocation = styled.p`
 
 export const Stats = styled.ul`
   display: flex;
-  gap: 20px;
   justify-content: space-evenly;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
   border-top: 1px solid #d6dbdf;
   list-style-type: none;
   background-color: #e5e7e9;
@@ -66,17 +63,22 @@ export const Stats = styled.ul`
 
 export const StatsItem = styled.li`
   display: flex;
-  gap: 10px;
+  width: 134px;
   flex-direction: column;
   align-items: center;
+  border-right: 1px solid #d6dbdf;
 `;
 
 export const StatsLabel = styled.span`
+  padding-top: 20px;
+  padding-bottom: 10px;
   font-size: 15px;
   color: #707b7c;
 `;
 
 export const StatsQuantity = styled.span`
+  padding-top: 10px;
+  padding-bottom: 20px;
   font-size: 17px;
   font-weight: bold;
   color: #1c2833;
