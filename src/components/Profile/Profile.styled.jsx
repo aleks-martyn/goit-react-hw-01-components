@@ -53,10 +53,7 @@ export const UserLocation = styled.p`
 
 export const Stats = styled.ul`
   display: flex;
-  margin: 0;
-  padding: 0;
   border-top: 1px solid #d6dbdf;
-  list-style-type: none;
   background-color: #e5e7e9;
 `;
 
