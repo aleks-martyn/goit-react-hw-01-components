@@ -29,7 +29,7 @@ export const StatList = styled.ul`
 
 export const StatListItem = styled.li`
   display: flex;
-  width: 80px;
+  flex-basis: calc(100% / 5);
   flex-direction: column;
   color: #fff;
 `;
