@@ -27,10 +27,13 @@ export const TableHeaderData = styled.th`
 export const TableBody = styled.tbody`
   color: grey;
   background-color: #fff;
+  text-align: center;
 `;
 
 export const TableRow = styled.tr`
-  padding-top: 0;
+  &:nth-child(2n) {
+    background-color: #e5e7e9;
+  }
 `;
 
 export const TableData = styled.td`
