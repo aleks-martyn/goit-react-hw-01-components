@@ -53,7 +53,6 @@ export const UserLocation = styled.p`
 
 export const Stats = styled.ul`
   display: flex;
-  justify-content: space-evenly;
   margin: 0;
   padding: 0;
   border-top: 1px solid #d6dbdf;
@@ -63,7 +62,7 @@ export const Stats = styled.ul`
 
 export const StatsItem = styled.li`
   display: flex;
-  width: 134px;
+  flex-basis: calc(100% / 3);
   flex-direction: column;
   align-items: center;
   border-right: 1px solid #d6dbdf;
