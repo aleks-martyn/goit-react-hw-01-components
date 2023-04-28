@@ -31,6 +31,7 @@ export const StatListItem = styled.li`
   display: flex;
   width: 80px;
   flex-direction: column;
+  color: #fff;
 `;
 
 export const ItemLabel = styled.span`
@@ -41,4 +42,5 @@ export const ItemLabel = styled.span`
 export const ItemPercentage = styled.span`
   padding-top: 10px;
   padding-bottom: 20px;
+  font-size: 20px;
 `;
