@@ -22,9 +22,6 @@ export const SectionTitle = styled.h2`
 
 export const StatList = styled.ul`
   display: flex;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
 `;
 
 export const StatListItem = styled.li`
