@@ -6,6 +6,7 @@ export const Container = styled.div`
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
   background-color: #d6dbdf;
 `;
