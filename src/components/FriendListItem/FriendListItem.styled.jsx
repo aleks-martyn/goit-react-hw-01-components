@@ -21,7 +21,16 @@ export const ItemStatus = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: green;
+  background-color: ${props => {
+    switch (props.isOnline) {
+      case true:
+        return 'green';
+      case false:
+        return 'red';
+      default:
+        return 'grey';
+    }
+  }};
 `;
 
 export const ItemImage = styled.img`
