@@ -12,11 +12,12 @@ export const Table = styled.table`
 export const TableHeader = styled.thead`
   color: #fff;
   background-color: #5dade2;
-  font-size: 15px;
-  text-transform: uppercase;
 `;
 
 export const TableHeaderData = styled.th`
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
   &:not(:last-child) {
