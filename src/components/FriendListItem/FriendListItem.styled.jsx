@@ -17,20 +17,22 @@ export const ListItem = styled.li`
   }
 `;
 
+const setStatusColor = props => {
+  switch (props.isOnline) {
+    case true:
+      return 'green';
+    case false:
+      return 'red';
+    default:
+      return 'grey';
+  }
+};
+
 export const ItemStatus = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: ${props => {
-    switch (props.isOnline) {
-      case true:
-        return 'green';
-      case false:
-        return 'red';
-      default:
-        return 'grey';
-    }
-  }};
+  background-color: ${setStatusColor};
 `;
 
 export const ItemImage = styled.img`
