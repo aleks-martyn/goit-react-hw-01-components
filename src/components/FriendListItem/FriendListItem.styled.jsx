@@ -18,14 +18,7 @@ export const ListItem = styled.li`
 `;
 
 const setStatusColor = props => {
-  switch (props.isOnline) {
-    case true:
-      return 'green';
-    case false:
-      return 'red';
-    default:
-      return 'grey';
-  }
+  return props.isOnline ? 'green' : 'red';
 };
 
 export const ItemStatus = styled.span`
